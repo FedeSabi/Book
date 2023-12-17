@@ -7,12 +7,37 @@
     <title>Proyecto de Diseño de Libros</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="estilo.css">
+    <!--estilo animacion en css-->
+    <style>
+         .card:hover img:not(.no-hover-animation) {
+        transform: scale(1.03);
+        transition: transform 0.3s ease-in-out;
+      }
+      .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .card-img-top {
+            border-radius: 15px 15px 0 0;
+        }
+    </style>
 <body>
   <div class="card mb-6 mt-4 m-4">
     <div class="card-body">
       <h1 class="card-title text-center">The top of the book write ✍️</h1>
   </div>
-    <img src="/img/kelly-sikkema-iiaUVel-cJE-unsplash(3).jpg" class="card-img-top mx-auto d-block" alt="..." style="max-height: 800px; max-width: 1000px; object-fit: cover;">
+    <img src="/img/kelly-sikkema-iiaUVel-cJE-unsplash(3).jpg" class="card-img-top mx-auto d-block no-hover-animation" alt="..." style="max-height: 800px; max-width: 1000px; object-fit: cover;">
 </div>
 
     <div class="row row-cols-1 row-cols-md-4 g-4 m-2">
@@ -339,6 +364,8 @@
               </div>
                   </div>
             
-    <script src="./js/bootstrap.bundle.min.js"></script> 
+    <script src="./js/bootstrap.bundle.min.js">
+      
+    </script> 
 </body>
 </html>
